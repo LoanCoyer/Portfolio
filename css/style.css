@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.et-hero-tabs-container a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #FF7F11;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #FF7F11;
+  color: white;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+/* ----------------------------------------début du header */
+
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: black;
+  text-align: center;
+  padding: 0 2em;
+  animation: changerFondCouleur 20s infinite;
+  animation-direction: alternate;
+
+
+
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+    color: white;
+    background-color: #f4121200;
+    animation: changerCouleur 20s infinite;
+    animation-direction: alternate;
+
+
+
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    opacity: 1;
+    color: #FF7F11;
+    animation: changerCouleur2 20s infinite;
+    animation-direction: alternate;
+  }
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.et-hero-tab {
+  border-right: 1px solid;
+  border-color: #BEB7A4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: white;
+    background: #FF7F11;
+    transition: all 0.5s ease;
+  }
+}
+
+.socialmedia {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkedin {
+  animation: changerCouleur3 20s infinite;
+  animation-direction: alternate;
+}
+
+.github {
+  animation: changerCouleur3 20s infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes changerFondCouleur {
+  0% {
+    background-color: #000;
+  }
+
+  50% {
+    background-color: #c6c4c4ec;
+  }
+}
+
+@keyframes changerCouleur {
+  0% {
+    color: #fff;
+  }
+
+  50% {
+    color: #000;
+  }
+}
+
+@keyframes changerCouleur2 {
+  0% {
+    color: #FF7F11;
+  }
+
+  50% {
+    color: #000;
+  }
+}
+
+@keyframes changerCouleur3 {
+  0% {
+    fill: #FF7F11;
+  }
+
+  50% {
+    fill: #000;
+  }
+}
+
+/* ----------------------------------------fin du header */
+
+/* ----------------------------------------début du bloc "à propos" */
+.apropos-main {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.apropos {
+  padding: 0.5rem;
+}
+
+.apropos-photo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.apropos-texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #EAE6E5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: "Century Gothic", 'Lato', sans-serif;
+
+}
+
+.apropos-bouton button {
+  text-align: center;
+  width: 36%;
+  border-radius: 4px;
+  background-color: #000;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  color: #fff !important;
+}
+
+.apropos-bouton button:hover {
+  color: white;
+  background-color: #FF7F11;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ----------------------------------------fin du bloc "à propos" */
+
+/* ----------------------------------------début du bloc "Mes expériences" */
+
+.experiences-main {
+  margin-top: 8%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.titre-experiences {
+  display: flex;
+  justify-content: center;
+}
+
+.experiences-main h2 {
+  text-align: center;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  width: 75%;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 0.3rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container {
+  background-color: #EAE6E5;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-exp1,
+.img-exp2 {
+  height: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 10%;
+  background-color: #fff;
+}
+
+.img-exp3 {
+  height: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 10%;
+  background-color: #fff;
+}
+
+/* ----------------------------------------fin du bloc "Mes expériences" */
+
+/* ----------------------------------------début du bloc "Portfolio" */
+
+.titre-portfolio h2 {
+  letter-spacing: 0.3rem;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+.portfolio-main {
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 8%;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    max-width: 600px;
+
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1);
+}
+
+/* ----------------------------------------fin du bloc "Portfolio" */
+
+/* ----------------------------------------début du bloc "Contact" */
+#contact {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  margin-top: 8%;
+}
+
+.d-grid button {
+  background-color: #000;
+  border: 1px solid;
+  border-color: #000;
+  color: #fff;
+}
+
+.d-grid button:hover {
+  background-color: #FF7F11;
+  color: #fff;
+}
+
+text:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #FF7F11;
+}
+
+.contact-texte {
+  font-size: medium;
+}
+
+/* ----------------------------------------fin du bloc "Contact" */
